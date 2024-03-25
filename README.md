@@ -10,19 +10,19 @@ Supported Version - 11.0.2 - Community Edition
 ## Table of Contents
 
 
-- Magento - Pimcore PIM Connector(#magento---pimcore-pim-connector)
-  - Table of Contents(#table-of-contents)
-    1. Overview(#1-overview)
-    2. Features(#2-features)
-    3. Prerequisites(#3-prerequisites)
-    4. Installation(#4-installation)
-    5. Authorization(#5-authorization)
-    6. Configuration(#6-configuration)
-    7. Synchronization(#7-synchronization)
-    8. Logging(#8-logging)
-    9. Translation(#9-translation)
-    10. Supported Field Types(#10-supported-field-types)
-    11. Support(#11-support)
+- [Magento - Pimcore PIM Connector](#magento---pimcore-pim-connector)
+  - [Table of Contents](#table-of-contents)
+    1. [Overview](#1-overview)
+    2. [Features](#2-features)
+    3. [Prerequisites](#3-prerequisites)
+    4. [Installation](#4-installation)
+    5. [Authorization](#5-authorization)
+    6. [Configuration](#6-configuration)
+    7. [Synchronization](#7-synchronization)
+    8. [Logging](#8-logging)
+    9. [Translation](#9-translation)
+    10. [Supported Field Types](#10-supported-field-types)
+    11. [Support](#11-support)
 
 
 
