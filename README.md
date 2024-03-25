@@ -26,7 +26,7 @@ A single product is synced at a time. The sync is triggered on publishing change
 ## 2. Features
 * **GraphQl Utilization:** Employs customized Magento GraphQl endpoint for faster results.
 * **Token-Based Authentication:** Implements token-based authentication and whitelisting of source IP to secure endpoint.
-* **Exclusive Authorization**: Allows Pimcore admins to secure the extension configuration page by authorizing users with appropriate bundle permission. \
+* **Exclusive Authorization**: Allows Pimcore admins to secure the extension configuration page by authorizing users with appropriate bundle permission. 
 
 * **Easy Configuration**: Simplifies data input and field mapping with a configuration page on the Pimcore side. 
 * **Published Products Export**: Syncs only if the product is published in Pimcore. 
@@ -36,7 +36,7 @@ A single product is synced at a time. The sync is triggered on publishing change
 
 * **Media Library**: Detects and imports all media files associated with a product—a single image, a gallery, an external image URL, or a video. The extension automatically recognizes and imports the details into Magento alongside the product. 
 
-    Note: Currently, Magento supports only YouTube and Vimeo videos. This extension operates adhering to this limitation.
+  >  Note: Currently, Magento supports only YouTube and Vimeo videos. This extension operates adhering to this limitation.
 
 ## 3. Prerequisites
 
