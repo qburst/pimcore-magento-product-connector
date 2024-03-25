@@ -1,0 +1,24 @@
+services:
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    QBurst\ProductSyncBundle\Controller\:
+        public: true
+        resource: '../../Controller'
+        tags: ['controller.service_arguments']
+
+    QBurst\ProductSyncBundle\Installer:
+        public: true
+        arguments:
+            # fetch the bundle via expression language
+            $bundle: "@=service('kernel').getBundle('QBurstProductSyncBundle')"
+
+    QBurst\ProductSyncBundle\EventListener\ProductUpdateSenderListener:
+        public: true
+        tags:
+            - { name: kernel.event_listener, event: pimcore.dataobject.postUpdate, method: onProductPostUpdate }
+
+    Symfony\Component\DependencyInjection\ContainerInterface: '@service_container'

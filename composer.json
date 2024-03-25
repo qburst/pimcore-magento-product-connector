@@ -1,0 +1,31 @@
+{
+    "name": "qburst/productsyncbundle",
+    "type": "pimcore-bundle",
+    "license": "GPL-3.0-or-later",
+    "description": "Magento Connector for Pimcore",
+    "keywords": ["pimcore", "magento", "connector", "product", "sync"],
+    "homepage": "https://github.com/qburst/pimcore-magento-product-connector",
+    "authors": [
+        {
+          "name": "Sam Jacob",
+          "email": "sam.jacob@qburst.com",
+          "role": "Senior Developer"
+        }
+      ],
+    "autoload": {
+        "psr-4": {
+            "QBurst\\": "src/QBurst/"
+        }
+    },
+    "extra": {
+        "pimcore": {
+            "bundles": [
+                "QBurst\\ProductSyncBundle\\QBurstProductSyncBundle"
+            ]
+        }
+    },
+    "require": {
+      "pimcore/pimcore": "^11",
+      "php":"^8.0"
+    }
+}

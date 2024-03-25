@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/bundles/qburstproductsync/css/message.css" />
+    <title>
+        {{ "qburstMagentoConnector"|trans({},'admin') }}
+    </title>
+</head>
+<body>
+    <div class="form-block">
+        <h1>{{ "qburstMagentoConnector"|trans({},'admin') }}</h1>
+        {{ message|raw }}
+        <h3>{{ 'qburstMagentoConnector_configuration_introduction'|trans({},'admin') }}</h3>
+        <p class="info-msg">{{ 'qburstMagentoConnector_configuration_note_points'|trans({},'admin') }}</p>
+        <form action="#" method="post">
+            <h2>{{ "qburstMagentoConnector_configuration"|trans({},'admin') }}</h2>
+            {% for configurationidentifier,configurationvalue in configuration %}
+                <div class="field1">
+                    <label for="{{ configurationidentifier }}" class="required san-seriff-font">{{ configurationidentifier|trans({},'admin') }}</label>
+                    {% set trans_key = (configurationidentifier~'_helptext') %}
+                    {% set trans_value = trans_key | trans({},'admin') %}
+                    {% if configurationidentifier == 'magentoCurrency' %}
+                        <select class="configuration-form-field" id="{{ configurationidentifier }}" name="{{ configurationidentifier }}">
+                            {% for unitAbbreviation,unitName in currencies %}
+                                <option value="{{ unitAbbreviation }}"  {{ (unitAbbreviation == configurationvalue) ? 'selected' : '' }} >{{ unitName }}</option>
+                            {% endfor %}
+                        </select>
+                        <span class="helper-text">**{{ trans_value }}</span>            
+                    {% else %}
+                        <input type="text" class="configuration-form-field" value="{{ configurationvalue }}" id="{{ configurationidentifier }}" name="{{ configurationidentifier }}" {{ (configurationidentifier == 'productStatus') ? 'readonly' : 'required' }}/>
+                        <span class="helper-text">**{{ trans_value }}</span>            
+                    {% endif %}
+                </div>
+            {% endfor %}
+            <input type="submit" class="configuration-form-field-submit" value="{{ 'Submit'|trans({},'admin') }}" />
+        </form>
+    </div>
+</body>
+</html>

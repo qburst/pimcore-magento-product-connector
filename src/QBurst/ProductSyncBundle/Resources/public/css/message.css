@@ -1,0 +1,101 @@
+.configuration-form-field{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.configuration-form-field:hover, .configuration-form-field:focus {
+  outline: none;
+  box-shadow: 0px 2px 10px rgba(0,0,0,.2);
+  border: solid 2px #8a2be2;
+}
+
+.configuration-form-field[readonly]{
+  color: #808080;
+}
+
+input[type=submit].configuration-form-field-submit {
+  width: 100%;
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: larger;
+}
+
+input[type=submit].configuration-form-field-submit:hover {
+  background-color: #45a049;
+}
+
+.form-block {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 0px 20px 20px 20px;
+}
+
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+.info-msg {
+  color: #059;
+  background-color: #BEF;
+}
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
+.warning-msg {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+
+.helper-text {
+  position: relative;
+  display: none;
+  font: 300 13px/17px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+  color: #404040;
+  word-wrap: break-word;
+  word-break: break-word;
+  margin-bottom: 1em;
+}
+    
+.configuration-form-field:focus+.helper-text {
+  display: block;
+}
+
+.required:after {
+  content:" *";
+  color: #ff0000;
+}
+
+.form-block {
+  font-family: sans-serif;
+}
+
+.qburst-logo {
+  background: url(../img/Q_icon_small.svg) center center no-repeat !important;
+  background-size: cover !important;
+}
+
+.qburst-magento-productsync-logo {
+  background: url(../img/PIM_Connector_Icon_34x34.svg) center center no-repeat !important;
+  background-size: cover !important;
+}
