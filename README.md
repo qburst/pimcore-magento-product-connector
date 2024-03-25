@@ -25,7 +25,7 @@ A single product is synced at a time. The sync is triggered on publishing change
 
 ## 2. Features
 * **GraphQl Utilization:** Employs customized Magento GraphQl endpoint for faster results.
-* **Token-Based Authentication: **Implements token-based authentication and whitelisting of source IP to secure endpoint.
+* **Token-Based Authentication:** Implements token-based authentication and whitelisting of source IP to secure endpoint.
 * **Exclusive Authorization**: Allows Pimcore admins to secure the extension configuration page by authorizing users with appropriate bundle permission. \
 
 * **Easy Configuration**: Simplifies data input and field mapping with a configuration page on the Pimcore side. 
